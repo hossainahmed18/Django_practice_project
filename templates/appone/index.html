@@ -1,0 +1,35 @@
+{% extends 'appone/base.html' %}
+
+{% load static %}
+
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+
+
+          <div class="row">
+                 <h1 id="head"> index </h1>
+                  <button onclick="hide()" class="btn btn-primary">hide</button>
+
+                  <div class="row">
+                        <div id="box"> </div>
+                  </div>
+
+            </div>
+
+          {% if request.user.is_authenticated %}
+                 <button class="btn btn-primary">login 1</button>
+      {% endif %}
+      <a class="btn btn-primary" href="{% url 'login' %}"> login 2</a>
+       <hr>
+      <a class="btn btn-primary" href="{% url 'register' %}"> Register</a>
+      <a class="btn btn-primary" href="{% url 'show' %}"> Show</a>
+
+
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+

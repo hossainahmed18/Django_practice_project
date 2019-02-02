@@ -1,0 +1,19 @@
+{% extends 'appone/base.html' %}
+
+{% load static %}
+
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+      <h1>Succesful Login</h1>
+      <a href="{% url 'logout' %}">LogOut</a>
+      <a href="{% url 'home' %}"> Home</a>
+      <br>
+      <a class="btn btn-success" href="{% url 'profile' %}"> Profile</a>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+

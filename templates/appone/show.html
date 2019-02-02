@@ -1,0 +1,20 @@
+{% extends 'appone/base.html' %}
+
+{% load static %}
+
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+     {% for p in post %}
+           <h2>{{p.title}}</h2>
+           <h1>{{p.id}}</h1>
+
+           <img src="{{ p.image.url }}">
+      {% endfor %}
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+

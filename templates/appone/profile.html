@@ -1,0 +1,19 @@
+{% extends 'appone/base.html' %}
+
+{% load static %}
+
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+     <h1>{{myuser.user_identify.username}}</h1>
+     <h1>{{myuser.city}}</h1>
+     <br>
+     <br>
+     <a class="btn btn-success" href="{% url 'reset_password' %}">Reset Password </a>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+
